@@ -537,11 +537,6 @@ img {
         display: none;
     }
 
-    .sidebar ul li a {
-        aspect-ratio: 1;
-        width: 55px;
-    }
-
     .sidebar ul li p {
         display: none;
         visibility: hidden;
