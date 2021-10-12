@@ -545,6 +545,8 @@ img {
 
     .sidebar ul li p {
         display: none;
+        visibility: hidden;
+        opacity: 0;
     }
 
     .sidebar i {
