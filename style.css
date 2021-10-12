@@ -614,6 +614,7 @@ img {
     .main .poster {
         margin-top: 25px;
         padding: 10px 15px;
+        border-radius: 15px;
     }
 
     .poster .views {
