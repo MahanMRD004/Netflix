@@ -223,6 +223,7 @@ img {
 .poster .views {
     display: flex;
     height: 20px;
+   
 }
 
 .poster #count {
@@ -232,6 +233,7 @@ img {
     border-radius: 15px;
     font-size: 12px;
     line-height: 10px;
+    z-index: 1;
 }
 
 .poster .users {
@@ -239,6 +241,7 @@ img {
     margin-inline: 15px;
     gap: 5px;
     align-items: center;
+    z-index: 1;
 }
 
 .users .img {
