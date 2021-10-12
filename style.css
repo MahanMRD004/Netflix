@@ -53,12 +53,6 @@ img {
     padding: 45px 40px;
 }
 
-.sidebar #btn {
-    position: absolute;
-    right: 25px;
-    line-height: 50px;
-}
-
 .sidebar .logo {
     font-size: 25px;
     font-weight: 700;
@@ -291,17 +285,11 @@ img {
 }
 
 .users .img {
-    aspect-ratio: 1;
+    height: 20px;
     width: 20px;
     border-radius: 50%;
     background: tomato;
     margin-left: -10px;
-}
-
-.users .img  {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .users p {
@@ -505,205 +493,23 @@ img {
 }
 
 
-@media (max-width:700px) {
-    body {
-        padding: 10px;
-        height: 90vh;
-    }
-
-    .container {
-        grid-template-columns: 45px auto;
-        grid-template-rows: auto 35px;
-    }
-
-    .container .sidebar {
-        padding: 45px 15px;
-    }
-
-    .sidebar .logo {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    .sidebar ul li {
-        white-space: nowrap;
-    }
-
-    .sidebar ul li:is(.title) {
-        display: none;
-    }
-
-    .sidebar i {
-        width: 100%;
-    }
-
-    .sidebar ul li.active::before {
-        width: 2px;
-    }
-
-    .container .main {
-        padding: 5px;
-    }
-
-    .main header {
-        height: 80px;
-        flex-wrap: wrap;
-    }
-
-    .main header .search-btn{
-        width: 100%;
-    }
-
-    .search-btn .left-right  {
-        gap: 5px;
-    }
-
-    .search-btn .left-right a {
-        font-size: 12px;
+@media (max-width:1100px) {
+    .main header .search-btn {
+        width: 250px;
     }
 
     .search-btn .search-box {
-        width: 80%;
-        height: 20px;
+        width: 180px;
     }
-
     .search-box input {
-        width: 100%;  
-        font-size: 10px;
+        width: 135px;
     }
 
-    .search-box i {
-      margin-inline: 5px;
-      font-size: 10px;
-    }
-
-    .main header .profile {
-        height: 30px;
-        width: 100%;
-        justify-content: flex-start;
-        margin: 0 0 0 15px;
-    }
-
-    header .profile .name h3 {
-        font-size: 11px;
-    }
-
-    header .profile .buttons {
-       position: absolute;
-       right: 15px;
-    }
-
-    .profile .buttons a {
-        font-size: 12px;
-    }
-
-    header .profile .img {
-        width: 28px;
-        outline-offset: 3px;
-    }
-
-    .main .poster {
-        margin-top: 25px;
-        padding: 10px 15px;
-    }
-
-    .poster .views {
-       display: none;
-    }
-
-    .poster .info {
-        min-height: 100px;
-        padding-inline: 15px;
+    .info .images {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
         align-items: flex-end;
-    }
-
-    .poster h1 {
-        font-size: 0.8em;
-    }
-
-    .content .episodes {
-        font-size: 6px;
-        gap: 2px;
-    }
-
-    .info .buttons {
-        height: 40px;
-        gap: 5px;
-    }
-
-    .buttons #watch {
-        height: 20px;
-        width: 40px;
-        font-size: 8px;
-    }
-
-    .buttons div * {
-        user-select: none;
-    }
-
-    .buttons #add  {
-        width: 20px;
-        font-size: 8px
-    }
-
-    .info .posters {
-        width: 150px;
-        height: fit-content;
-        align-items: flex-end;
-        justify-content: flex-end;
-        margin-bottom: 10px;
-        gap: 5px;
-    }
-
-    .posters .img {
-        aspect-ratio: 1;
-        width: 30px;
-    }
-
-    #poster-1, #poster-2, #poster-3 {
-        background-size: cover;
-    }
-
-    .parties .title {
-        font-size: 11px;
-    }
-
-    .cards .card {
-        height: 150px;
-        width: 100px;
-        border-radius: 8px;
-    }
-
-    .card .info {
-        height: 75px;
-        padding: 15px 5px;
-        font-size: 10px;
-    }
-
-    .info span {
-        font-size: 7px;
-    }
-
-    .cards .card:hover {
-        transform: none;
-        padding: 15px 5px;
-    }
-
-    .friends {
-        width: 100%;
-        flex-direction: row;
-        grid-column: span 2;
-        grid-row: 2/2;
-        padding-block: 2px;
-        padding-inline: 10px;
-        justify-content: center;
-    }
-
-    .friends .users {
-        width: 25px;
-    }
-
-    .friends .add  {
-        font-size: 8px;
+        padding: 20px 0;
     }
 }
