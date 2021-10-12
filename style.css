@@ -693,7 +693,7 @@ img {
         font-size: 7px;
     }
 
-    .cards .card:hover {
+    .cards .card:hover .info {
         transform: none;
         padding: 15px 5px;
     }
@@ -705,7 +705,7 @@ img {
         grid-row: 2/2;
         padding-block: 2px;
         padding-inline: 10px;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .friends .users {
