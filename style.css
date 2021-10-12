@@ -537,10 +537,8 @@ img {
         display: none;
     }
 
-    .sidebar ul li p {
+    .sidebar ul li a p {
         display: none;
-        visibility: hidden;
-        opacity: 0;
     }
 
     .sidebar i {
