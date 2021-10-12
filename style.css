@@ -508,6 +508,7 @@ img {
 @media (max-width:700px) {
     body {
         padding: 10px;
+        height: 95vh;
     }
 
     .container {
@@ -634,6 +635,10 @@ img {
         height: 20px;
         width: 40px;
         font-size: 8px;
+    }
+
+    .buttons div * {
+        user-select: none;
     }
 
     .buttons #add  {
