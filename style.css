@@ -119,7 +119,7 @@ img {
 
 ::-webkit-scrollbar { width: 3px; border-radius: 10px; height: 6px;}
 ::-webkit-scrollbar-button {display: none;}
-::-webkit-scrollbar-track {background: #e6e6e6;}
+::-webkit-scrollbar-track {background: #e6e6e6;border-radius: 10px;}
 ::-webkit-scrollbar-thumb {background: #a1b0bd; border-radius: 10px;}
 
 .main header {
@@ -187,19 +187,36 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .profile .buttons a {
+    position: relative;
     font-size: 18px;
     margin-inline: 10px;
     color: var(--black);
     cursor: pointer;
     transition: color 0.1s ease;
+    text-decoration: none;
 }
 
 .profile .buttons a:hover {
     color: var(--highlight);
+}
+
+.profile .buttons a::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: -2px;
+    aspect-ratio: 1;
+    width: 8px;
+    background: var(--highlight);
+    border-radius: 50%;
+}
+
+.profile .buttons a:nth-child(1)::after {
+    display: none;
 }
 
 .profile .name h3 {
@@ -213,9 +230,11 @@ img {
 
 .profile .img {
     aspect-ratio: 1/1;
-    width: 50px;
+    width: 45px;
     background: gold;
     border-radius: 50%;
+    outline: 2px solid var(--dark);
+    outline-offset: 3px
 }
 
 .main .poster {
@@ -358,7 +377,7 @@ img {
 
 
 .posters .img.active {
-    box-shadow: 0 0 15px rgba(185, 185, 185);
+    box-shadow: 0 0 5px rgba(185, 185, 185);
 }
 
 #poster-1 {
