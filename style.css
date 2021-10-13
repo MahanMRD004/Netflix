@@ -588,6 +588,10 @@ img {
     .info span {
         font-size: 10px;
     }
+
+    .cards .card:hover .info {
+        padding: 50px 25px;
+    }
 }
 
 
