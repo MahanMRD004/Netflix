@@ -22,7 +22,7 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     background: var(--body);
-    padding: 20px 40px;
+    padding: 10px 35px;
 }
 
 img {
@@ -44,7 +44,8 @@ img {
     box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     display: grid;
-    grid-template-columns: 200px auto 45px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 45px;
 }
 
 .container .sidebar {
@@ -484,11 +485,12 @@ img {
 
 .friends {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
-    padding-block: 35px;
+    padding-block: 5px;
+    grid-column: span 2;
+    border-top: 1px solid var(--border);
 }
 
 .friends .users {
@@ -516,7 +518,12 @@ img {
 
 @media (max-width:1075px) {
     .container {
-        grid-template-columns: 185px auto 60px;
+        grid-template-columns: 185px auto;
+    }
+
+    .container .sidebar {
+        width: 130px;
+        padding: 35px 0 0 15px;
     }
 
     .main header .name h3 {
