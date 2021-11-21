@@ -605,7 +605,6 @@ img {
 @media (max-width:800px) {
     body {
         padding: 10px;
-        height: 90vh;
     }
 
     .container {
